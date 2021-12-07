@@ -16,15 +16,15 @@ export default function App() {
 
   if (!isLoadingComplete) {
     return null;
-  } else {
-    return (
-      <View style={styles.container}>
-        <View style={styles.scoreContainer}>
-          <Score items={scoreItems} />
-        </View>
-      </View>
-    );
   }
+
+  return (
+    <View style={styles.container}>
+      <View style={styles.scoreContainer}>
+        <Score items={scoreItems} />
+      </View>
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
